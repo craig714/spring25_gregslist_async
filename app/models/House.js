@@ -14,26 +14,6 @@ export class House {
       this.creator = data.creator
   }
 
-// get deleteButton() {
-//     // NOTE who is currently logged in
-//     const user = AppState.identity
-
-//     // NOTE if user is not logged in
-//     if (user == null) {
-//       return ''
-//     }
-
-//     // NTOE if the logged in user did not create the car
-//     if (this.creatorId != user.id) {
-//       return ''
-//     }
-
-//     return `
-//      <button onclick="app.housesController.deleteHouse('${this.id}')" class="btn btn-outline-danger">
-//         Delete Car
-//       </button>
-//     `
-//   }
 
 
 
