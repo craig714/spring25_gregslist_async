@@ -23,8 +23,77 @@
   </header>
 
   <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="my-3">Houses</h>
+        </div>
+      </div>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-7">
+          <div id="carFormPlaceholder">
+            <!-- <p class="fs-1">Please log in to create a house listing</p> -->
+          </div>
+          <div id="carForm" class="bg-light shadow rounded p-3">
 
-    <!-- TODO put houses container here! -->
+            <form onsubmit="app.housesController.createHouseListing()">
+              <div class="mb-3">
+                <label for="houseYear">House year</label>
+                <input id="houseYear" name="year" type="number" required min="1800" placeholder="year...">
+              </div>
+              <div class="mb-3">
+                <label for="housePrice">House price</label>
+                <input id="housePrice" name="price" type="number"  placeholder="Price...">
+              </div>
+              <div class="mb-3">
+                <label for="carPrice">House bedrooms</label>
+                <input id="carPrice" name="bedrooms" type="number" required min="0" max="1000000" placeholder="0">
+              </div>
+              <div class="mb-3">
+                <label for="houseBathrooms">House bathrooms</label>
+                <input id="houseBathrooms" name="bathrooms" type="number" required min="1" max="2025" placeholder="0">
+              </div>
+              <div class="mb-3">
+                <label for="houseLevels">House levels</label>
+                <input id="houseLevels" name="levels" type="number" required min="0" placeholder="levels...">
+              </div>
+             
+              <div class="mb-3">
+                <label for="houseUrl">House imgUrl</label>
+                <input id="houseUrl" name="imgUrl" type="url"  class="check-input" placeholder="imgUrl..">
+              </div>
+              <div class="mb-3">
+                <label for="carDescription">House Description</label>
+                <textarea name="description" id="houseDescription" class="w-100" placeholder="Description of the House..."
+                  maxlength="500"></textarea>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-outline-danger me-2" type="reset">
+                  Reset Form
+                </button>
+                <button class="btn btn-outline-dark" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      <div class="container">
+        <div class="card mb-3">
+          <div id="houseList" class="row g-0">
+            <!-- <div class="col-md-4">
+              <img src="https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2VzfGVufDB8fDB8fHww" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
     <div class="container">
       <div class="row">

@@ -32,7 +32,7 @@ function _drawAuthSettings() {
 export class AuthController {
   constructor() {
     AppState.identity = null
-    AppState.on('account', drawUser)
+    // AppState.on('account', drawUser)
     AuthService.on(AuthService.AUTH_EVENTS.LOADED, drawUser)
     AuthService.on(AuthService.AUTH_EVENTS.LOADED, _drawAuthSettings)
     drawUser()
